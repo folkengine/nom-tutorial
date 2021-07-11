@@ -1,6 +1,6 @@
 # Nom Tutorial
 
-[Nom](https://github.com/Geal/nom) is a wonderful parser combinators library written in Rust.  It can handle binary and text files.  Consider it where you would otherwise user a regular expression or Flex and Bison.  Nom has the advantage of Rusts's strong typing and memory safety, and it is often more performant than alternatives.  Learning nom is a worthwhile addition to your Rust toolbox.
+[Nom](https://github.com/Geal/nom) is a wonderful parser combinators library written in Rust.  It can handle binary and text files.  Consider it where you would otherwise use a regular expression or Flex and Bison.  Nom has the advantage of Rusts's strong typing and memory safety, and it is often more performant than alternatives.  Learning nom is a worthwhile addition to your Rust toolbox.
 
 ## Rationale
 
@@ -372,7 +372,7 @@ escaped_transform(..., alt((escaped_backslash, escaped_space)))
 
 ### Return Types
 
-Up until now we've seen nom parsers return an `IResult<&str, &str>`, but nom parsers are just Rust functions and they can return anything.  If you've studies the example code closely you've noticed:
+Up until now we've seen nom parsers return an `IResult<&str, &str>`, but nom parsers are just Rust functions and they can return anything.  If you've studied the example code closely you've noticed:
 
 ```rust
 fn transform_escaped(i: &str) -> nom::IResult<&str, std::string::String>
